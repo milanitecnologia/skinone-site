@@ -25,7 +25,7 @@
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body class="font-sans antialiased bg-bgLight text-gray-800 scroll-smooth">
+<body class="overflow-x-hidden font-sans antialiased bg-bgLight text-gray-800 scroll-smooth">
 
     <div id="site-nav" class="absolute top-0 z-50 w-full">
         <div class="mx-auto grid w-full max-w-[1440px] grid-cols-[auto_1fr_auto] items-center gap-4 px-4 pt-5 sm:px-6 lg:px-10 xl:px-16 xl:pt-6">
@@ -76,27 +76,27 @@
         <div class="absolute inset-0 bg-cyan/10 mix-blend-soft-light"></div>
         <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-slate-900 to-transparent"></div>
         
-        <div class="relative z-20 mx-auto grid w-full max-w-[1440px] items-center gap-12 px-4 pb-16 sm:px-6 lg:px-10 xl:grid-cols-[minmax(0,1fr)_420px] xl:px-16">
-            <div class="max-w-4xl rounded-md bg-slate-950/35 p-5 backdrop-blur-[2px] sm:p-7 xl:bg-transparent xl:p-0 xl:backdrop-blur-0">
-                <div class="mb-6 inline-flex items-center gap-2 rounded-md border border-cyan/50 bg-slate-950/45 px-4 py-2 text-sm font-bold uppercase tracking-[0.18em] text-cyan backdrop-blur-md">
+        <div class="relative z-20 mx-auto grid w-full max-w-[1440px] min-w-0 items-center gap-12 px-4 pb-16 sm:px-6 lg:px-10 xl:grid-cols-[minmax(0,1fr)_420px] xl:px-16">
+            <div class="w-full max-w-[22rem] min-w-0 overflow-hidden rounded-md bg-slate-950/35 p-5 backdrop-blur-[2px] sm:max-w-4xl sm:p-7 xl:bg-transparent xl:p-0 xl:backdrop-blur-0">
+                <div class="mb-6 inline-flex max-w-full items-center gap-2 rounded-md border border-cyan/50 bg-slate-950/45 px-4 py-2 text-xs font-bold uppercase tracking-[0.14em] text-cyan backdrop-blur-md sm:text-sm sm:tracking-[0.18em]">
                     <span class="material-icons text-base">health_and_safety</span>
-                    Segurança do paciente
+                    <span class="min-w-0">Segurança do paciente</span>
                 </div>
 
-                <h1 class="max-w-5xl font-sans text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl xl:text-7xl">
+                <h1 class="max-w-5xl break-words font-sans text-2xl font-bold leading-tight sm:text-5xl lg:text-6xl xl:text-7xl">
                     Controle inteligente para prevenir lesões de pele no hospital
                 </h1>
 
-                <p class="mt-6 max-w-3xl font-sans text-lg font-normal leading-relaxed text-white/90 sm:text-xl lg:text-2xl">
+                <p class="mt-6 max-w-3xl font-sans text-base font-normal leading-relaxed text-white/90 sm:text-xl lg:text-2xl">
                     O SKIN ONE integra avaliação, registro fotográfico, alertas e acompanhamento clínico em um fluxo único para reduzir riscos e dar visibilidade à equipe assistencial.
                 </p>
 
-                <div class="mt-9 flex flex-col gap-4 sm:flex-row">
-                    <a href="#sobre" class="inline-flex items-center justify-center gap-2 rounded-md bg-main px-7 py-4 text-base font-bold text-white shadow-xl transition-all hover:bg-cyan sm:text-lg">
+                <div class="mt-9 flex min-w-0 flex-col gap-4 sm:flex-row">
+                    <a href="#sobre" class="inline-flex max-w-full items-center justify-center gap-2 rounded-md bg-main px-6 py-4 text-base font-bold text-white shadow-xl transition-all hover:bg-cyan sm:px-7 sm:text-lg">
                         Conheça a Plataforma
                         <span class="material-icons text-xl">arrow_forward</span>
                     </a>
-                    <a href="#how-it-works" class="inline-flex items-center justify-center gap-2 rounded-md border border-white/40 bg-white/10 px-7 py-4 text-base font-bold text-white backdrop-blur-md transition-all hover:bg-white/20 sm:text-lg">
+                    <a href="#how-it-works" class="inline-flex max-w-full items-center justify-center gap-2 rounded-md border border-white/40 bg-white/10 px-6 py-4 text-base font-bold text-white backdrop-blur-md transition-all hover:bg-white/20 sm:px-7 sm:text-lg">
                         Como funciona
                     </a>
                 </div>
@@ -309,118 +309,237 @@
         </div>
     </section>
 
-    <section id="componentes" class="py-24 bg-black">
+    <section id="componentes" class="bg-black py-20 sm:py-24">
         <div class="container mx-auto px-4 flex flex-col items-center">
-            <img src="./assets/image_39d5dc.jpg" alt="Componentes do SKIN ONE: App e Dashboard, Conteúdo em Vídeo, Inteligência Artificial, Dashboard Administrativo e Painel TV" class="max-w-full lg:max-w-5xl h-auto rounded-xl shadow-2xl">
+            <img src="./assets/image_39d5dc.jpg" alt="Componentes do SKIN ONE: App e Dashboard, Conteúdo em Vídeo, Inteligência Artificial, Dashboard Administrativo e Painel TV" class="h-auto max-w-full rounded-md shadow-2xl lg:max-w-5xl">
         </div>
     </section>
 
-    <section id="funcionalidades" class="py-24 bg-black border-t border-gray-800">
-        <div class="container mx-auto px-4 flex flex-col items-center">
-            <img src="./assets/image_39d2b5.jpg" alt="Funcionalidades do SKIN ONE: Reconhecimento Facial, Alertas em Tempo Real, Documentação por fotos, Tutorial, Escala Braden, Controle de Execução, Estadiamento por IA, Indicadores, Interface Interativa, Conduta Diária, Evolução da Lesão, Cronologia da Lesão, Gestão de Decúbito, Gestão de Curativo, Gestão de Prevenção" class="max-w-full lg:max-w-3xl h-auto rounded-xl shadow-2xl">
-        </div>
-    </section>
-
-    <section id="depoimentos" class="py-24 bg-[#027B8B]">
-        <div class="container mx-auto px-4 flex flex-col items-center">
-            <img src="./assets/image_395db4.jpg" alt="O que falam de nós: Depoimento de Elza Coutinho e interface do aplicativo em tablets" class="max-w-full lg:max-w-5xl h-auto rounded-xl shadow-2xl">
-        </div>
-    </section>
-
-    <section id="cases" class="py-20 bg-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-main mb-12">Instituições que confiam no SKIN ONE</h2>
-            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-80">
-                <img src="./assets/Andarai.jpg" alt="Hospital do Andaraí" class="h-20 md:h-24 object-contain mix-blend-multiply grayscale hover:grayscale-0 transition-all duration-300">
-                <img src="./assets/HCFMUSP.png" alt="Hospital das Clínicas FMUSP" class="h-20 md:h-24 object-contain mix-blend-multiply grayscale hover:grayscale-0 transition-all duration-300">
-                <img src="./assets/HSF.jpg" alt="Hospital São Francisco" class="h-20 md:h-24 object-contain mix-blend-multiply grayscale hover:grayscale-0 transition-all duration-300">
-                <img src="./assets/valsa.png" alt="Grupo Valsa" class="h-16 md:h-20 object-contain mix-blend-multiply grayscale hover:grayscale-0 transition-all duration-300">
-            </div>
-        </div>
-    </section>
-
-    <section id="how-it-works" class="py-24 bg-bgLight border-t border-gray-200">
+    <section id="funcionalidades" class="bg-black py-20 border-t border-gray-800 sm:py-24">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-main mb-16 text-center">Como Funciona</h2>
-            
-            <div class="max-w-4xl mx-auto relative">
-                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-2 bg-main rounded-full hidden md:block"></div>
-                
-                <div class="flex flex-col md:flex-row justify-between items-center w-full mb-16">
-                    <div class="w-full md:w-5/12 text-right pr-8">
-                        <p class="text-2xl text-grayLight">O SKINONE roda em servidor local instalado no hospital ou em ambiente de cloud.</p>
-                    </div>
-                    <div class="z-20 flex items-center bg-main shadow-lg w-16 h-16 rounded-full justify-center text-white text-2xl font-bold">1</div>
-                    <div class="w-full md:w-5/12 pl-8">
-                        <span class="material-icons text-6xl text-cyan opacity-30 hidden md:block">cloud_done</span>
+            <div class="mx-auto max-w-4xl text-center">
+                <p class="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-cyan">Funcionalidades</p>
+                <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
+                    Recursos que organizam o cuidado de ponta a ponta
+                </h2>
+            </div>
+
+            <div id="funcionalidades-grid" class="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5"></div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="bg-main py-20 sm:py-24">
+        <div class="container mx-auto px-4">
+            <div class="grid items-center gap-10 lg:grid-cols-[1fr_0.85fr]">
+                <div class="rounded-md bg-white p-7 shadow-2xl sm:p-10 lg:p-12">
+                    <p class="mb-5 text-sm font-bold uppercase tracking-[0.22em] text-cyan">Depoimento</p>
+                    <blockquote class="text-xl font-semibold leading-relaxed text-gray-700 sm:text-2xl lg:text-3xl">
+                        “É um produto muito prático e inovador no mercado hospitalar, desenvolvido exclusivamente para otimizar o acompanhamento dos cuidados da pele, na prevenção e evolução de todos os tipos de lesão, mantendo as particularidades da instituição, com estatísticas e gráficos em tempo real, além de gerar relatórios dos indicadores da ANVISA.”
+                    </blockquote>
+
+                    <div class="mt-8 border-l-4 border-cyan pl-5">
+                        <p class="text-xl font-bold text-main">Elza Coutinho</p>
+                        <p class="mt-1 text-lg font-semibold text-grayLight">Enfermeira Intensivista</p>
                     </div>
                 </div>
 
-                <div class="flex flex-col md:flex-row-reverse justify-between items-center w-full mb-16">
-                    <div class="w-full md:w-5/12 text-left pl-8">
-                        <p class="text-2xl text-grayLight">Na internação, a enfermagem usa a aplicação para avaliar, classificar o risco (BRADEN) e documentar com fotos.</p>
-                    </div>
-                    <div class="z-20 flex items-center bg-main shadow-lg w-16 h-16 rounded-full justify-center text-white text-2xl font-bold">2</div>
-                    <div class="w-full md:w-5/12 pr-8 text-right">
-                        <span class="material-icons text-6xl text-cyan opacity-30 hidden md:block">assignment</span>
-                    </div>
-                </div>
-
-                <div class="flex flex-col md:flex-row justify-between items-center w-full mb-16">
-                    <div class="w-full md:w-5/12 text-right pr-8">
-                        <p class="text-2xl text-grayLight">O acompanhamento das ações a serem realizadas é feito através de alertas nos tablets e Painel Informativo (CCTV).</p>
-                    </div>
-                    <div class="z-20 flex items-center bg-main shadow-lg w-16 h-16 rounded-full justify-center text-white text-2xl font-bold">3</div>
-                    <div class="w-full md:w-5/12 pl-8">
-                        <span class="material-icons text-6xl text-cyan opacity-30 hidden md:block">notifications_active</span>
-                    </div>
-                </div>
-
-                <div class="flex flex-col md:flex-row-reverse justify-between items-center w-full">
-                    <div class="w-full md:w-5/12 text-left pl-8">
-                        <p class="text-2xl text-grayLight">Ao executar uma nova ação, registra-se os materiais e fotos, o médico é notificado e tudo é integrado ao HIS automaticamente.</p>
-                    </div>
-                    <div class="z-20 flex items-center bg-main shadow-lg w-16 h-16 rounded-full justify-center text-white text-2xl font-bold">4</div>
-                    <div class="w-full md:w-5/12 pr-8 text-right">
-                        <span class="material-icons text-6xl text-cyan opacity-30 hidden md:block">sync_alt</span>
+                <div class="relative overflow-hidden rounded-md bg-slate-950 shadow-2xl">
+                    <img src="./assets/SKIN 1.jpg" alt="Equipe de saúde utilizando tecnologia no atendimento hospitalar" class="h-auto w-full object-contain">
+                    <div class="border-t border-white/15 bg-slate-950 p-5 sm:absolute sm:bottom-0 sm:left-0 sm:right-0 sm:bg-slate-950/60 sm:p-6 sm:backdrop-blur-sm">
+                        <p class="text-sm font-bold uppercase tracking-[0.18em] text-cyan">Cuidado monitorado</p>
+                        <p class="mt-2 text-lg font-bold text-white sm:text-xl">Tecnologia aplicada à rotina assistencial.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="footer" class="bg-slate-900 text-white py-24">
-        <div class="container mx-auto px-4 flex flex-col lg:flex-row justify-between gap-16">
+    <section id="cases" class="bg-white py-20 sm:py-24">
+        <div class="container mx-auto px-4">
+            <div class="mx-auto max-w-3xl text-center">
+                <p class="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-cyan">Cases</p>
+                <h2 class="text-3xl font-bold leading-tight text-main md:text-4xl">
+                    Instituições que confiam no SKIN ONE
+                </h2>
+                <p class="mt-5 text-lg leading-relaxed text-grayLight">
+                    Hospitais e grupos de saúde utilizam o SKIN ONE para dar mais visibilidade, rastreabilidade e controle ao cuidado com a pele.
+                </p>
+            </div>
+
+            <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                <article class="group flex min-h-52 flex-col justify-between rounded-md border border-gray-200 bg-bgLight p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan/70 hover:shadow-xl">
+                    <div class="flex h-24 items-center justify-center rounded-md bg-white p-4">
+                        <img src="./assets/Andarai.jpg" alt="Hospital do Andaraí" class="max-h-16 w-full object-contain transition-all duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="mt-6 border-l-4 border-cyan pl-4">
+                        <h3 class="text-lg font-bold text-slate-900">Hospital do Andaraí</h3>
+                        <p class="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-grayLight">Instituição hospitalar</p>
+                    </div>
+                </article>
+
+                <article class="group flex min-h-52 flex-col justify-between rounded-md border border-gray-200 bg-bgLight p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan/70 hover:shadow-xl">
+                    <div class="flex h-24 items-center justify-center rounded-md bg-white p-4">
+                        <img src="./assets/HCFMUSP.png" alt="Hospital das Clínicas FMUSP" class="max-h-16 w-full object-contain transition-all duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="mt-6 border-l-4 border-cyan pl-4">
+                        <h3 class="text-lg font-bold text-slate-900">Hospital das Clínicas FMUSP</h3>
+                        <p class="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-grayLight">Complexo hospitalar</p>
+                    </div>
+                </article>
+
+                <article class="group flex min-h-52 flex-col justify-between rounded-md border border-gray-200 bg-bgLight p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan/70 hover:shadow-xl">
+                    <div class="flex h-24 items-center justify-center rounded-md bg-white p-4">
+                        <img src="./assets/HSF.jpg" alt="Hospital São Francisco" class="max-h-16 w-full object-contain transition-all duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="mt-6 border-l-4 border-cyan pl-4">
+                        <h3 class="text-lg font-bold text-slate-900">Hospital São Francisco</h3>
+                        <p class="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-grayLight">Instituição hospitalar</p>
+                    </div>
+                </article>
+
+                <article class="group flex min-h-52 flex-col justify-between rounded-md border border-gray-200 bg-bgLight p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan/70 hover:shadow-xl">
+                    <div class="flex h-24 items-center justify-center rounded-md bg-white p-4">
+                        <img src="./assets/valsa.png" alt="Grupo Valsa" class="max-h-16 w-full object-contain transition-all duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="mt-6 border-l-4 border-cyan pl-4">
+                        <h3 class="text-lg font-bold text-slate-900">Grupo Valsa</h3>
+                        <p class="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-grayLight">Grupo de saúde</p>
+                    </div>
+                </article>
+            </div>
+
+            <p class="mx-auto mt-10 max-w-3xl border-t border-gray-200 pt-8 text-center text-base font-semibold leading-relaxed text-grayLight sm:text-lg">
+                Presença em ambientes hospitalares que exigem rastreabilidade, padronização de condutas e acompanhamento contínuo.
+            </p>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="bg-bgLight py-20 border-t border-gray-200 sm:py-24">
+        <div class="container mx-auto px-4">
+            <div class="mx-auto max-w-3xl text-center">
+                <p class="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-cyan">Como funciona</p>
+                <h2 class="text-3xl font-bold leading-tight text-main md:text-4xl">
+                    Um fluxo contínuo para acompanhar o cuidado com a pele
+                </h2>
+            </div>
             
-            <div class="w-full lg:w-1/3 flex flex-col gap-6">
-                <h2 class="text-5xl font-bold text-cyan mb-4">Dúvidas?<br><span class="text-white">Fale Conosco!</span></h2>
+            <div class="relative mx-auto mt-16 max-w-5xl">
+                <div class="absolute left-6 top-0 h-full w-1 rounded-full bg-main/20 md:left-1/2 md:-translate-x-1/2"></div>
                 
-                <div class="flex items-center gap-4 text-xl">
-                    <span class="material-icons text-main text-3xl">phone</span>
-                    <p>+55 (21) 99968-2304</p>
+                <div class="relative grid gap-6 pb-12 pl-16 md:grid-cols-[1fr_auto_1fr] md:items-center md:gap-8 md:pl-0">
+                    <div class="rounded-md border border-gray-200 bg-white p-6 shadow-lg md:text-right">
+                        <p class="text-sm font-bold uppercase tracking-[0.18em] text-cyan">Infraestrutura</p>
+                        <h3 class="mt-3 text-2xl font-bold text-slate-900">Instalação no ambiente do hospital</h3>
+                        <p class="mt-3 text-lg leading-relaxed text-grayLight">O SKINONE roda em servidor local instalado no hospital ou em ambiente de cloud.</p>
+                    </div>
+                    <div class="absolute left-0 top-0 z-10 flex h-12 w-12 items-center justify-center rounded-md bg-main text-xl font-bold text-white shadow-xl md:static md:h-16 md:w-16 md:rounded-full">1</div>
+                    <div class="hidden items-center gap-4 text-cyan md:flex">
+                        <span class="material-icons text-6xl opacity-35">cloud_done</span>
+                    </div>
                 </div>
+
+                <div class="relative grid gap-6 pb-12 pl-16 md:grid-cols-[1fr_auto_1fr] md:items-center md:gap-8 md:pl-0">
+                    <div class="hidden items-center justify-end gap-4 text-cyan md:flex">
+                        <span class="material-icons text-6xl opacity-35">assignment</span>
+                    </div>
+                    <div class="absolute left-0 top-0 z-10 flex h-12 w-12 items-center justify-center rounded-md bg-main text-xl font-bold text-white shadow-xl md:static md:h-16 md:w-16 md:rounded-full">2</div>
+                    <div class="rounded-md border border-gray-200 bg-white p-6 shadow-lg">
+                        <p class="text-sm font-bold uppercase tracking-[0.18em] text-cyan">Internação</p>
+                        <h3 class="mt-3 text-2xl font-bold text-slate-900">Avaliação e registro inicial</h3>
+                        <p class="mt-3 text-lg leading-relaxed text-grayLight">Na internação, a enfermagem usa a aplicação para avaliar, classificar o risco (BRADEN) e documentar com fotos.</p>
+                    </div>
+                </div>
+
+                <div class="relative grid gap-6 pb-12 pl-16 md:grid-cols-[1fr_auto_1fr] md:items-center md:gap-8 md:pl-0">
+                    <div class="rounded-md border border-gray-200 bg-white p-6 shadow-lg md:text-right">
+                        <p class="text-sm font-bold uppercase tracking-[0.18em] text-cyan">Acompanhamento</p>
+                        <h3 class="mt-3 text-2xl font-bold text-slate-900">Alertas para ações assistenciais</h3>
+                        <p class="mt-3 text-lg leading-relaxed text-grayLight">O acompanhamento das ações a serem realizadas é feito através de alertas nos tablets e Painel Informativo (CCTV).</p>
+                    </div>
+                    <div class="absolute left-0 top-0 z-10 flex h-12 w-12 items-center justify-center rounded-md bg-main text-xl font-bold text-white shadow-xl md:static md:h-16 md:w-16 md:rounded-full">3</div>
+                    <div class="hidden items-center gap-4 text-cyan md:flex">
+                        <span class="material-icons text-6xl opacity-35">notifications_active</span>
+                    </div>
+                </div>
+
+                <div class="relative grid gap-6 pl-16 md:grid-cols-[1fr_auto_1fr] md:items-center md:gap-8 md:pl-0">
+                    <div class="hidden items-center justify-end gap-4 text-cyan md:flex">
+                        <span class="material-icons text-6xl opacity-35">sync_alt</span>
+                    </div>
+                    <div class="absolute left-0 top-0 z-10 flex h-12 w-12 items-center justify-center rounded-md bg-main text-xl font-bold text-white shadow-xl md:static md:h-16 md:w-16 md:rounded-full">4</div>
+                    <div class="rounded-md border border-gray-200 bg-white p-6 shadow-lg">
+                        <p class="text-sm font-bold uppercase tracking-[0.18em] text-cyan">Integração</p>
+                        <h3 class="mt-3 text-2xl font-bold text-slate-900">Execução, notificação e registro no HIS</h3>
+                        <p class="mt-3 text-lg leading-relaxed text-grayLight">Ao executar uma nova ação, registra-se os materiais e fotos, o médico é notificado e tudo é integrado ao HIS automaticamente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-slate-900 py-24 text-white">
+        <div class="container mx-auto grid gap-12 px-4 lg:grid-cols-[0.85fr_1fr] lg:items-start">
+            
+            <div>
+                <p class="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-cyan">Fale conosco</p>
+                <h2 class="text-4xl font-bold leading-tight sm:text-5xl">
+                    Vamos conversar sobre o cuidado com a pele no seu hospital
+                </h2>
+                <p class="mt-6 max-w-xl text-lg leading-relaxed text-white/70">
+                    Entre em contato para conhecer a plataforma, tirar dúvidas ou agendar uma conversa com a equipe SKIN ONE.
+                </p>
                 
-                <div class="flex items-start gap-4 text-xl">
-                    <span class="material-icons text-main text-3xl mt-1">location_on</span>
-                    <p>Rua Doutor Ovídio Pires de Campos, Cerqueira César, Prédio CEAC 4º andar,<br>São Paulo - SP, 05401-000</p>
+                <div class="mt-10 grid gap-4">
+                    <a href="tel:+5521999682304" class="group flex items-center gap-4 rounded-md border border-white/10 bg-white/5 p-5 transition-all hover:border-cyan/70 hover:bg-white/10">
+                        <span class="material-icons flex h-12 w-12 items-center justify-center rounded-md bg-main text-2xl text-white transition-colors group-hover:bg-cyan">phone</span>
+                        <span>
+                            <span class="block text-sm font-bold uppercase tracking-[0.16em] text-cyan">Telefone</span>
+                            <span class="mt-1 block text-xl font-bold text-white">+55 (21) 99968-2304</span>
+                        </span>
+                    </a>
+
+                    <a href="https://wa.me/5521999682304" target="_blank" rel="noopener" class="group flex items-center gap-4 rounded-md border border-white/10 bg-white/5 p-5 transition-all hover:border-cyan/70 hover:bg-white/10">
+                        <span class="material-icons flex h-12 w-12 items-center justify-center rounded-md bg-main text-2xl text-white transition-colors group-hover:bg-cyan">chat</span>
+                        <span>
+                            <span class="block text-sm font-bold uppercase tracking-[0.16em] text-cyan">WhatsApp</span>
+                            <span class="mt-1 block text-xl font-bold text-white">Enviar mensagem</span>
+                        </span>
+                    </a>
+
+                    <div class="flex items-start gap-4 rounded-md border border-white/10 bg-white/5 p-5">
+                        <span class="material-icons flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-main text-2xl text-white">location_on</span>
+                        <span>
+                            <span class="block text-sm font-bold uppercase tracking-[0.16em] text-cyan">Endereço</span>
+                            <span class="mt-1 block text-lg leading-relaxed text-white/80">Rua Doutor Ovídio Pires de Campos, Cerqueira César, Prédio CEAC 4º andar, São Paulo - SP, 05401-000</span>
+                        </span>
+                    </div>
                 </div>
             </div>
 
-            <form class="w-full lg:w-1/2 flex flex-col gap-6 bg-white p-8 rounded-3xl">
+            <form id="contact-form" class="flex flex-col gap-5 rounded-md bg-white p-6 text-slate-900 shadow-2xl sm:p-8">
                 <div>
-                    <label class="block text-gray-700 font-bold mb-2">Nome</label>
-                    <input type="text" placeholder="Seu nome completo" class="w-full bg-bgLight text-gray-800 p-4 rounded-xl border border-gray-200 focus:outline-none focus:border-main transition-colors">
+                    <p class="text-sm font-bold uppercase tracking-[0.18em] text-cyan">Mensagem rápida</p>
+                    <h3 class="mt-2 text-2xl font-bold text-main">Conte um pouco sobre sua instituição</h3>
+                </div>
+
+                <div>
+                    <label for="contact-name" class="mb-2 block font-bold text-gray-700">Nome</label>
+                    <input id="contact-name" type="text" required placeholder="Seu nome completo" class="w-full rounded-md border border-gray-200 bg-bgLight p-4 text-gray-800 transition-colors focus:border-main focus:outline-none">
                 </div>
                 <div>
-                    <label class="block text-gray-700 font-bold mb-2">Email</label>
-                    <input type="email" placeholder="seu@email.com" class="w-full bg-bgLight text-gray-800 p-4 rounded-xl border border-gray-200 focus:outline-none focus:border-main transition-colors">
+                    <label for="contact-email" class="mb-2 block font-bold text-gray-700">Email</label>
+                    <input id="contact-email" type="email" required placeholder="seu@email.com" class="w-full rounded-md border border-gray-200 bg-bgLight p-4 text-gray-800 transition-colors focus:border-main focus:outline-none">
                 </div>
                 <div>
-                    <label class="block text-gray-700 font-bold mb-2">Mensagem</label>
-                    <textarea rows="4" placeholder="Como podemos ajudar o seu hospital?" class="w-full bg-bgLight text-gray-800 p-4 rounded-xl border border-gray-200 focus:outline-none focus:border-main transition-colors resize-none"></textarea>
+                    <label for="contact-message" class="mb-2 block font-bold text-gray-700">Mensagem</label>
+                    <textarea id="contact-message" rows="5" required placeholder="Como podemos ajudar o seu hospital?" class="w-full resize-none rounded-md border border-gray-200 bg-bgLight p-4 text-gray-800 transition-colors focus:border-main focus:outline-none"></textarea>
                 </div>
-                <div class="flex justify-end mt-4">
-                    <button type="button" class="bg-main text-white font-bold py-4 px-12 rounded-xl text-lg hover:bg-cyan transition-all w-full md:w-auto">Enviar Mensagem</button>
+                <div class="flex flex-col gap-3 pt-2 sm:flex-row sm:items-center sm:justify-between">
+                    <p class="text-sm leading-relaxed text-grayLight">O envio abre o WhatsApp com sua mensagem preenchida.</p>
+                    <button type="submit" class="inline-flex w-full min-w-fit items-center justify-center gap-2 whitespace-nowrap rounded-md bg-main px-8 py-4 text-base font-bold text-white transition-all hover:bg-cyan sm:w-auto sm:text-lg">
+                        Enviar mensagem
+                        <span class="material-icons text-xl">arrow_forward</span>
+                    </button>
                 </div>
             </form>
         </div>
@@ -447,6 +566,95 @@
                 if (icon) icon.textContent = 'menu';
             });
         });
+
+        const contactForm = document.getElementById('contact-form');
+
+        contactForm?.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const name = document.getElementById('contact-name').value.trim();
+            const email = document.getElementById('contact-email').value.trim();
+            const message = document.getElementById('contact-message').value.trim();
+            const whatsappMessage = `Olá, equipe SKIN ONE. Meu nome é ${name}. Meu email é ${email}. ${message}`;
+
+            window.open(`https://wa.me/5521999682304?text=${encodeURIComponent(whatsappMessage)}`, '_blank', 'noopener');
+        });
+
+        const funcionalidades = [
+            {
+                nome: 'Reconhecimento Facial',
+                icone: 'face-scan-square-svgrepo-com.svg'
+            },
+            {
+                nome: 'Alertas em Tempo Real',
+                icone: 'alert-svgrepo-com.svg'
+            },
+            {
+                nome: 'Documentação por Fotos',
+                icone: 'folder-with-files-svgrepo-com.svg'
+            },
+            {
+                nome: 'Tutorial',
+                icone: 'square-academic-cap-2-svgrepo-com.svg'
+            },
+            {
+                nome: 'Escala Braden',
+                icone: 'diagnostic-svgrepo-com.svg'
+            },
+            {
+                nome: 'Controle de Execução',
+                icone: 'chat-alert-2-svgrepo-com.svg'
+            },
+            {
+                nome: 'Estadiamento por IA',
+                icone: 'stethoscope-svgrepo-com.svg'
+            },
+            {
+                nome: 'Indicadores',
+                icone: 'doc-text-svgrepo-com.svg'
+            },
+            {
+                nome: 'Interface Interativa',
+                icone: 'tablet-alt-1-svgrepo-com.svg'
+            },
+            {
+                nome: 'Conduta Diária',
+                icone: 'clock-svgrepo-com.svg'
+            },
+            {
+                nome: 'Evolução da Lesão',
+                icone: 'graphic-svgrepo-com.svg'
+            },
+            {
+                nome: 'Cronologia da Lesão',
+                icone: 'backlog-svgrepo-com.svg'
+            },
+            {
+                nome: 'Gestão de Decúbito',
+                icone: 'loading-arrows-svgrepo-com.svg'
+            },
+            {
+                nome: 'Gestão de Curativo',
+                icone: 'bandage-svgrepo-com.svg'
+            },
+            {
+                nome: 'Gestão de Prevenção',
+                icone: 'direction-svgrepo-com.svg'
+            }
+        ];
+
+        const funcionalidadesGrid = document.getElementById('funcionalidades-grid');
+
+        if (funcionalidadesGrid) {
+            funcionalidadesGrid.innerHTML = funcionalidades.map((funcionalidade) => `
+                <article class="group flex min-h-40 flex-col items-center justify-center rounded-md border border-white/10 bg-white/5 p-5 text-center shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-cyan/70 hover:bg-main/20">
+                    <div class="flex h-20 w-20 items-center justify-center rounded-md bg-cyan/15 ring-1 ring-cyan/50 transition-colors group-hover:bg-cyan/25">
+                        <img src="./assets/icons/${funcionalidade.icone}" alt="" aria-hidden="true" class="h-12 w-12 object-contain opacity-100 [filter:brightness(0)_saturate(100%)_invert(58%)_sepia(96%)_saturate(1100%)_hue-rotate(138deg)_brightness(92%)_contrast(101%)]">
+                    </div>
+                    <h3 class="mt-5 text-base font-bold leading-snug text-white">${funcionalidade.nome}</h3>
+                </article>
+            `).join('');
+        }
     </script>
 </body>
 </html>
