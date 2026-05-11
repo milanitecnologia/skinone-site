@@ -38,6 +38,11 @@ yarn-error.log
 testem.log
 /typings
 __screenshots__/
+.codex
+__MACOSX/
+/Logo SKiNONE/
+/Site SKINONE/
+/SkinOne_Logo_Turquesas.png/
 
 # System files
 .DS_Store
