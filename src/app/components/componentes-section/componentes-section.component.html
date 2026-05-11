@@ -1,13 +1,22 @@
 <section id="componentes" class="relative bg-black py-20 sm:py-28 overflow-hidden">
   <div class="absolute inset-0 pointer-events-none">
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-[#027B8B]/10 blur-[120px]"></div>
-    <div class="absolute bottom-0 right-0 w-[300px] h-[300px] rounded-full bg-[#027B8B]/5 blur-[80px]"></div>
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-[#027B8B]/10 blur-[120px]"
+    ></div>
+    <div
+      class="absolute bottom-0 right-0 w-[300px] h-[300px] rounded-full bg-[#027B8B]/5 blur-[80px]"
+    ></div>
   </div>
 
   <div class="container mx-auto px-6 relative z-10">
     <div class="text-center mb-16">
       <h2 class="text-4xl sm:text-5xl font-bold text-white tracking-tight">
-        Componentes do <span class="text-[#027B8B]">SKIN ONE</span>
+        Componentes do
+        <img
+          src="assets/SkinOne_Logo_BrancoTurquesa.png"
+          alt="Skin One"
+          class="inline-block h-[0.8em] w-auto align-[0.02em] object-contain"
+        />
       </h2>
       <p class="mt-4 text-gray-400 text-lg max-w-xl mx-auto">
         Um ecossistema completo para monitoramento e prevenção de lesões de pele.
@@ -15,28 +24,50 @@
     </div>
 
     <div class="flex flex-col lg:flex-row justify-center items-start gap-6">
-      <div class="relative flex-shrink-0 w-[240px] sm:w-[280px] aspect-[9/16] mx-auto lg:mx-0">
-        <div class="absolute -inset-4 rounded-[2.5rem] bg-[#027B8B]/20 blur-2xl"></div>
-        <div class="relative h-full w-full rounded-[2rem] overflow-hidden border-4 border-white/10 shadow-2xl shadow-black/60">
+      <div class="relative flex-shrink-0 w-[250px] sm:w-[300px] aspect-[9/16] mx-auto lg:mx-0">
+        <div class="absolute -inset-6 rounded-[2.5rem] bg-[#00E5FF]/35 blur-3xl"></div>
+        <div
+          class="absolute inset-7 rounded-full bg-[#00E5FF]/30 blur-3xl"
+          aria-hidden="true"
+        ></div>
+        <div
+          class="absolute inset-0 rounded-[2rem] border border-[#7FF7FF]/35 shadow-[0_0_38px_rgba(0,229,255,0.38)]"
+          aria-hidden="true"
+        ></div>
+        <div
+          class="relative h-full w-full rounded-[2rem] overflow-hidden border-2 border-[#00E5FF]/70 bg-gradient-to-b from-[#042f35] via-black to-black shadow-[0_0_58px_rgba(0,229,255,0.34)] ring-1 ring-white/15"
+        >
           <img
-            src="assets/icons/human-body.svg"
+            src="assets/icons/silhueta.svg"
             alt="Corpo humano para monitoramento SKIN ONE"
-            class="w-full h-full object-contain p-4"
+            class="w-full h-full scale-[1.04] object-contain p-3 saturate-150 contrast-110 drop-shadow-[0_0_18px_rgba(127,247,255,0.95)]"
           />
         </div>
-        <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-20 h-1.5 bg-white/20 rounded-full"></div>
+        <div
+          class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-20 h-1.5 bg-white/20 rounded-full"
+        ></div>
       </div>
 
       <div class="w-full max-w-xl flex flex-col gap-4 mx-auto lg:mx-0">
         @for (item of componentes; track item.id) {
-          <div class="group relative text-left rounded-xl border border-white/10 bg-white/5 p-6 transition-all duration-300 hover:border-[#027B8B]/50 hover:bg-white/8">
+          <div
+            class="group relative text-left rounded-xl border border-[#00A8B5]/25 bg-[#071a1f]/85 p-6 shadow-[0_18px_45px_rgba(0,0,0,0.28)] transition-all duration-300 hover:border-[#00A8B5]/70 hover:bg-[#09262c]"
+          >
+            <div class="absolute inset-y-4 left-0 w-1 rounded-r-full bg-[#00A8B5]/70"></div>
             <div class="flex items-start gap-4">
-              <div class="flex-shrink-0 w-11 h-11 rounded-lg flex items-center justify-center bg-white/10 group-hover:bg-[#027B8B]/30 transition-colors duration-300">
-                <span class="material-icons text-xl text-gray-400 group-hover:text-[#027B8B] transition-colors duration-300">{{ item.icon }}</span>
+              <div
+                class="flex-shrink-0 w-11 h-11 rounded-lg flex items-center justify-center bg-[#00A8B5]/18 ring-1 ring-[#00A8B5]/25 transition-colors duration-300 group-hover:bg-[#00A8B5]/30"
+              >
+                <span
+                  class="material-icons text-xl text-[#79E3EA] transition-colors duration-300 group-hover:text-white"
+                  >{{ item.icon }}</span
+                >
               </div>
               <div class="flex-1 min-w-0">
                 <h3 class="font-semibold text-base text-white">{{ item.title }}</h3>
-                <p class="mt-2 text-gray-400 text-sm leading-relaxed">{{ item.description }}</p>
+                <p class="mt-2 text-slate-200/85 text-sm leading-relaxed">
+                  {{ item.description }}
+                </p>
               </div>
             </div>
           </div>

@@ -1,23 +1,46 @@
 <div id="site-nav" class="absolute top-0 z-50 w-full">
-  <div class="mx-auto grid w-full max-w-[1440px] grid-cols-[auto_1fr_auto] items-center gap-4 px-4 pt-5 sm:px-6 lg:px-10 xl:px-16 xl:pt-6">
+  <div
+    class="mx-auto grid w-full max-w-[1440px] grid-cols-[auto_1fr_auto] items-center gap-4 px-4 pt-5 sm:px-6 lg:px-10 xl:px-16 xl:pt-6"
+  >
     <a href="#" class="flex -translate-y-2 items-center justify-self-start">
-      <img src="assets/SkinOne_Logo_BrancoTurquesa.png" alt="Logo Skin One" class="block h-7 object-contain sm:h-8 xl:h-9">
+      <img
+        src="assets/SkinOne_Logo_BrancoTurquesa.png"
+        alt="Logo Skin One"
+        class="block h-7 object-contain sm:h-8 xl:h-9"
+      />
     </a>
 
     <nav class="hidden items-center justify-self-center xl:flex">
-      <div class="flex items-center gap-5 font-bold text-white drop-shadow-md text-sm 2xl:gap-7 2xl:text-base">
-        <a href="#sobre" class="hover:text-cyan transition-colors whitespace-nowrap">Sobre o SKINONE</a>
-        <a href="#objetivos" class="hover:text-cyan transition-colors whitespace-nowrap">Objetivos</a>
-        <a href="#componentes" class="hover:text-cyan transition-colors whitespace-nowrap">Componentes</a>
-        <a href="#funcionalidades" class="hover:text-cyan transition-colors whitespace-nowrap">Funcionalidades</a>
-        <a href="#depoimentos" class="hover:text-cyan transition-colors whitespace-nowrap">Depoimentos</a>
+      <div
+        class="flex items-center gap-5 font-bold text-white drop-shadow-md text-sm 2xl:gap-7 2xl:text-base"
+      >
+        <a href="#sobre" class="hover:text-cyan transition-colors whitespace-nowrap"
+          >Sobre o SKINONE</a
+        >
+        <a href="#objetivos" class="hover:text-cyan transition-colors whitespace-nowrap"
+          >Objetivos</a
+        >
+        <a href="#componentes" class="hover:text-cyan transition-colors whitespace-nowrap"
+          >Componentes</a
+        >
+        <a href="#funcionalidades" class="hover:text-cyan transition-colors whitespace-nowrap"
+          >Funcionalidades</a
+        >
+        <a href="#depoimentos" class="hover:text-cyan transition-colors whitespace-nowrap"
+          >Depoimentos</a
+        >
         <a href="#cases" class="hover:text-cyan transition-colors whitespace-nowrap">Cases</a>
-        <a href="#how-it-works" class="hover:text-cyan transition-colors whitespace-nowrap">Como Funciona</a>
+        <a href="#how-it-works" class="hover:text-cyan transition-colors whitespace-nowrap"
+          >Como Funciona</a
+        >
       </div>
     </nav>
 
     <div class="flex items-center justify-self-end gap-3">
-      <a href="#footer" class="hidden text-white font-bold bg-main px-6 py-3 rounded-md hover:bg-cyan transition-all text-sm lg:inline-flex lg:px-7 lg:text-base whitespace-nowrap shadow-lg">
+      <a
+        href="#footer"
+        class="hidden text-white font-bold bg-main px-6 py-3 rounded-md hover:bg-cyan transition-all text-sm lg:inline-flex lg:px-7 lg:text-base whitespace-nowrap shadow-lg"
+      >
         Fale conosco
       </a>
       <button
@@ -34,15 +57,57 @@
 
   @if (menuOpen) {
     <div class="px-4 pt-4 sm:px-6 lg:px-10 xl:hidden">
-      <div class="mx-auto flex max-w-[1440px] flex-col gap-1 rounded-md bg-slate-950/95 p-4 text-white shadow-2xl backdrop-blur-md">
-        <a href="#sobre" (click)="closeMenu()" class="rounded-md px-3 py-3 font-bold hover:bg-white/10">Sobre o SKINONE</a>
-        <a href="#objetivos" (click)="closeMenu()" class="rounded-md px-3 py-3 font-bold hover:bg-white/10">Objetivos</a>
-        <a href="#componentes" (click)="closeMenu()" class="rounded-md px-3 py-3 font-bold hover:bg-white/10">Componentes</a>
-        <a href="#funcionalidades" (click)="closeMenu()" class="rounded-md px-3 py-3 font-bold hover:bg-white/10">Funcionalidades</a>
-        <a href="#depoimentos" (click)="closeMenu()" class="rounded-md px-3 py-3 font-bold hover:bg-white/10">Depoimentos</a>
-        <a href="#cases" (click)="closeMenu()" class="rounded-md px-3 py-3 font-bold hover:bg-white/10">Cases</a>
-        <a href="#how-it-works" (click)="closeMenu()" class="rounded-md px-3 py-3 font-bold hover:bg-white/10">Como Funciona</a>
-        <a href="#footer" (click)="closeMenu()" class="mt-3 rounded-md bg-main px-4 py-3 text-center font-bold hover:bg-cyan sm:hidden">Fale conosco</a>
+      <div
+        class="mx-auto flex max-w-[1440px] flex-col gap-1 rounded-md bg-slate-950/95 p-4 text-white shadow-2xl backdrop-blur-md"
+      >
+        <a
+          href="#sobre"
+          (click)="closeMenu()"
+          class="rounded-md px-3 py-3 font-bold hover:bg-white/10"
+          >Sobre o SKINONE</a
+        >
+        <a
+          href="#objetivos"
+          (click)="closeMenu()"
+          class="rounded-md px-3 py-3 font-bold hover:bg-white/10"
+          >Objetivos</a
+        >
+        <a
+          href="#componentes"
+          (click)="closeMenu()"
+          class="rounded-md px-3 py-3 font-bold hover:bg-white/10"
+          >Componentes</a
+        >
+        <a
+          href="#funcionalidades"
+          (click)="closeMenu()"
+          class="rounded-md px-3 py-3 font-bold hover:bg-white/10"
+          >Funcionalidades</a
+        >
+        <a
+          href="#depoimentos"
+          (click)="closeMenu()"
+          class="rounded-md px-3 py-3 font-bold hover:bg-white/10"
+          >Depoimentos</a
+        >
+        <a
+          href="#cases"
+          (click)="closeMenu()"
+          class="rounded-md px-3 py-3 font-bold hover:bg-white/10"
+          >Cases</a
+        >
+        <a
+          href="#how-it-works"
+          (click)="closeMenu()"
+          class="rounded-md px-3 py-3 font-bold hover:bg-white/10"
+          >Como Funciona</a
+        >
+        <a
+          href="#footer"
+          (click)="closeMenu()"
+          class="mt-3 rounded-md bg-main px-4 py-3 text-center font-bold hover:bg-cyan sm:hidden"
+          >Fale conosco</a
+        >
       </div>
     </div>
   }

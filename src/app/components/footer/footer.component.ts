@@ -13,7 +13,19 @@ export class FooterComponent {
   mensagem = '';
 
   enviarMensagem(): void {
-    const texto = `Olá, equipe SKIN ONE. Meu nome é ${this.nome}. Meu email é ${this.email}. ${this.mensagem}`;
-    window.open(`https://wa.me/5521999682304?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
+    const nome = this.nome.trim();
+    const email = this.email.trim();
+    const mensagem = this.mensagem.trim();
+
+    if (!nome || !email || !mensagem) {
+      return;
+    }
+
+    const texto = `Olá, equipe Skin One. Meu nome é ${nome}. Meu email é ${email}. ${mensagem}`;
+    window.open(
+      `https://wa.me/5521999682304?text=${encodeURIComponent(texto)}`,
+      '_blank',
+      'noopener',
+    );
   }
 }
