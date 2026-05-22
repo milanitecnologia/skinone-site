@@ -12,7 +12,7 @@
 
       <div class="mt-10 grid gap-4">
         <a
-          href="https://wa.me/5521999682304"
+          href="https://wa.me/5521992097277"
           target="_blank"
           rel="noopener"
           class="group flex items-center gap-4 rounded-md border border-white/10 bg-white/5 p-5 transition-all hover:border-cyan/70 hover:bg-white/10"
@@ -28,7 +28,7 @@
             <span class="block text-sm font-bold uppercase tracking-[0.16em] text-cyan"
               >Whatsapp</span
             >
-            <span class="mt-1 block text-xl font-bold text-white">+55 21 99968-2304</span>
+            <span class="mt-1 block text-xl font-bold text-white">+55 (21) 99209-7277</span>
           </span>
         </a>
 
@@ -110,6 +110,15 @@
           class="w-full resize-none rounded-md border border-gray-200 bg-bgLight p-4 text-gray-800 transition-colors focus:border-main focus:outline-none"
         ></textarea>
       </div>
+      @if (erroFormulario) {
+        <p
+          class="rounded-md border border-red-200 bg-red-50 px-4 py-3 text-sm font-bold text-red-700"
+          role="alert"
+          aria-live="polite"
+        >
+          {{ erroFormulario }}
+        </p>
+      }
       <div class="flex flex-col gap-3 pt-2 sm:flex-row sm:items-center sm:justify-between">
         <p class="text-sm leading-relaxed text-grayLight">
           O envio abre o WhatsApp com sua mensagem preenchida.

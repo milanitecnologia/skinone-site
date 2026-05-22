@@ -23,9 +23,11 @@
       </p>
     </div>
 
-    <div class="flex flex-col lg:flex-row justify-center items-start gap-6">
+    <div
+      class="mx-auto grid max-w-6xl grid-cols-1 items-start gap-6 lg:grid-cols-[minmax(360px,480px)_minmax(520px,576px)] lg:items-stretch lg:gap-6"
+    >
       <!-- Imagem do tablet já desenhada com o app dentro (aumentada vertical e horizontalmente) -->
-      <div class="relative flex-shrink-0 w-[360px] sm:w-[480px] mx-auto lg:mx-0">
+      <div class="relative mx-auto w-full max-w-[480px] lg:mx-0">
         <div class="absolute -inset-6 rounded-[2.5rem] bg-[#00E5FF]/35 blur-3xl"></div>
         <div class="absolute inset-7 rounded-full bg-[#00E5FF]/30 blur-3xl" aria-hidden="true"></div>
         <div class="absolute inset-0 rounded-[2rem] border border-[#7FF7FF]/35 shadow-[0_0_38px_rgba(0,229,255,0.38)]" aria-hidden="true"></div>
@@ -39,15 +41,15 @@
       </div>
 
       <!-- Lista de componentes -->
-      <div class="w-full max-w-xl flex flex-col gap-4 mx-auto lg:mx-0">
+      <div class="mx-auto flex w-full max-w-[576px] flex-col gap-4 lg:mx-0 lg:h-full">
         @for (item of componentes; track item.id) {
           <div
-            class="group relative text-left rounded-xl border border-[#00A8B5]/25 bg-[#071a1f]/85 p-6 shadow-[0_18px_45px_rgba(0,0,0,0.28)] transition-all duration-300 hover:border-[#00A8B5]/70 hover:bg-[#09262c]"
+            class="group relative min-h-[126px] text-left rounded-lg border border-[#00A8B5]/35 bg-[#061b20]/90 px-6 py-6 shadow-[0_18px_45px_rgba(0,0,0,0.28)] transition-all duration-300 hover:border-[#00A8B5]/70 hover:bg-[#09262c] lg:flex-1 lg:content-center"
           >
-            <div class="absolute inset-y-4 left-0 w-1 rounded-r-full bg-[#00A8B5]/70"></div>
+            <div class="absolute inset-y-4 left-0 w-1 rounded-r-full bg-[#00C8D7]"></div>
             <div class="flex items-start gap-4">
               <div
-                class="flex-shrink-0 w-11 h-11 rounded-lg flex items-center justify-center bg-[#00A8B5]/18 ring-1 ring-[#00A8B5]/25 transition-colors duration-300 group-hover:bg-[#00A8B5]/30"
+                class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-lg bg-[#00A8B5]/12 ring-1 ring-[#00A8B5]/40 transition-colors duration-300 group-hover:bg-[#00A8B5]/30"
               >
                 <span
                   class="material-icons text-xl text-[#79E3EA] transition-colors duration-300 group-hover:text-white"
