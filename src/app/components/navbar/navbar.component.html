@@ -1,66 +1,14 @@
-<!-- navbar.component.html -->
 <div id="site-nav" class="absolute top-0 z-50 w-full">
   <div
     class="mx-auto grid w-full max-w-[1440px] grid-cols-[auto_1fr_auto] items-center gap-4 px-4 pt-5 sm:px-6 lg:px-10 xl:px-16 xl:pt-6"
   >
-    <div class="flex items-center justify-self-start gap-3">
-      <a href="#" class="flex -translate-y-2 items-center">
-        <img
-          src="assets/SkinOne_Logo_BrancoTurquesa.png"
-          alt="Logo Skin One"
-          class="block h-7 object-contain sm:h-8 xl:h-9"
-        />
-      </a>
-      <a
-        href="#footer"
-        class="hidden text-white font-bold bg-main px-4 py-2 rounded-md hover:bg-cyan transition-all text-sm lg:inline-flex lg:px-5 lg:py-2.5 lg:text-base whitespace-nowrap shadow-md"
-      >
-        Fale conosco
-      </a>
-      <div class="relative">
-        <button
-          type="button"
-          (click)="toggleLangDropdown()"
-          class="flex w-28 items-center justify-between gap-2 bg-white/20 text-white text-sm rounded-md px-3 py-2 cursor-pointer hover:bg-white/30 transition-colors backdrop-blur-sm"
-        >
-          <div class="flex items-center gap-2">
-            <img
-              [src]="currentLang === 'pt' ? 'https://flagicons.lipis.dev/flags/4x3/br.svg' : 'https://flagicons.lipis.dev/flags/4x3/us.svg'"
-              class="h-4 w-5 object-cover rounded-sm"
-              alt="flag"
-            />
-            <span>{{ currentLang === 'pt' ? 'PT-BR' : 'EN' }}</span>
-          </div>
-          <span class="material-icons text-sm">arrow_drop_down</span>
-        </button>
-        @if (langDropdownOpen) {
-          <div class="absolute left-0 mt-2 w-28 rounded-md bg-white shadow-lg z-50">
-            <button
-              (click)="changeLanguage('pt')"
-              class="flex w-full items-center gap-2 px-3 py-2 text-sm text-gray-800 hover:bg-gray-100 transition-colors"
-            >
-              <img
-                src="https://flagicons.lipis.dev/flags/4x3/br.svg"
-                class="h-4 w-5 object-cover rounded-sm"
-                alt="Brasil"
-              />
-              <span class="text-black">PT-BR</span>
-            </button>
-            <button
-              (click)="changeLanguage('en')"
-              class="flex w-full items-center gap-2 px-3 py-2 text-sm text-gray-800 hover:bg-gray-100 transition-colors"
-            >
-              <img
-                src="https://flagicons.lipis.dev/flags/4x3/us.svg"
-                class="h-4 w-5 object-cover rounded-sm"
-                alt="USA"
-              />
-              <span class="text-black">EN</span>
-            </button>
-          </div>
-        }
-      </div>
-    </div>
+    <a href="#" class="flex -translate-y-2 items-center justify-self-start">
+      <img
+        src="assets/SkinOne_Logo_BrancoTurquesa.png"
+        alt="Logo Skin One"
+        class="block h-7 object-contain sm:h-8 xl:h-9"
+      />
+    </a>
 
     <nav class="hidden items-center justify-self-center xl:flex">
       <div
@@ -89,6 +37,12 @@
     </nav>
 
     <div class="flex items-center justify-self-end gap-3">
+      <a
+        href="#footer"
+        class="hidden text-white font-bold bg-main px-6 py-3 rounded-md hover:bg-cyan transition-all text-sm lg:inline-flex lg:px-7 lg:text-base whitespace-nowrap shadow-lg"
+      >
+        Fale conosco
+      </a>
       <button
         type="button"
         (click)="toggleMenu()"
