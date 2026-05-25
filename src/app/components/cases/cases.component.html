@@ -1,121 +1,66 @@
+<!-- src/app/components/cases/cases.component.html -->
 <section id="cases" class="bg-white py-20 sm:py-24">
   <div class="container mx-auto px-4">
     <div class="mx-auto max-w-3xl text-center">
-      <p class="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-cyan">Cases</p>
+      <p class="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-cyan">{{ 'cases.badge' | translate }}</p>
       <h2 class="text-3xl font-bold leading-tight text-main md:text-4xl">
-        Instituições que confiam no SKINONE
+        {{ 'cases.titulo' | translate }}
       </h2>
       <p class="mt-5 text-lg leading-relaxed text-grayLight">
-        Hospitais e grupos de saúde utilizam o SKINONE para dar mais visibilidade, rastreabilidade e
-        controle ao cuidado com a pele.
+        {{ 'cases.subtitulo' | translate }}
       </p>
     </div>
 
     <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
-      <div
-        class="group grid min-h-64 grid-rows-[7.5rem_1fr] rounded-md border border-gray-200 bg-bgLight p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan/70 hover:shadow-xl"
-      >
+      <div class="group grid min-h-64 grid-rows-[7.5rem_1fr] rounded-md border border-gray-200 bg-bgLight p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan/70 hover:shadow-xl">
         <div class="flex h-24 items-center justify-center self-start rounded-md bg-white p-4">
-          <img
-            src="assets/Andarai.jpg"
-            alt="Hospital do Andaraí"
-            class="max-h-16 w-full object-contain transition-all duration-300 group-hover:scale-105"
-          />
+          <img src="assets/Andarai.jpg" alt="Hospital do Andaraí" class="max-h-16 w-full object-contain transition-all duration-300 group-hover:scale-105" />
         </div>
         <div class="grid content-start border-l-4 border-cyan pl-4">
-          <h3 class="min-h-14 text-lg font-bold leading-snug text-slate-900">
-            Hospital do Andaraí
-          </h3>
-          <p class="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-grayLight">
-            Instituição hospitalar
-          </p>
+          <h3 class="min-h-14 text-lg font-bold leading-snug text-slate-900">{{ 'cases.hospital_andarai' | translate }}</h3>
+          <p class="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-grayLight">{{ 'cases.tipo_andarai' | translate }}</p>
         </div>
       </div>
-
-      <div
-        class="group grid min-h-64 grid-rows-[7.5rem_1fr] rounded-md border border-gray-200 bg-bgLight p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan/70 hover:shadow-xl"
-      >
+      <div class="group grid min-h-64 grid-rows-[7.5rem_1fr] rounded-md border border-gray-200 bg-bgLight p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan/70 hover:shadow-xl">
         <div class="flex h-24 items-center justify-center self-start rounded-md bg-white p-4">
-          <img
-            src="assets/HCFMUSP.png"
-            alt="Hospital das Clínicas FMUSP"
-            class="max-h-16 w-full object-contain transition-all duration-300 group-hover:scale-105"
-          />
+          <img src="assets/HCFMUSP.png" alt="Hospital das Clínicas FMUSP" class="max-h-16 w-full object-contain transition-all duration-300 group-hover:scale-105" />
         </div>
         <div class="grid content-start border-l-4 border-cyan pl-4">
-          <h3 class="min-h-14 text-lg font-bold leading-snug text-slate-900">
-            Hospital das Clínicas FMUSP
-          </h3>
-          <p class="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-grayLight">
-            Complexo hospitalar
-          </p>
+          <h3 class="min-h-14 text-lg font-bold leading-snug text-slate-900">{{ 'cases.hospital_hcfmusp' | translate }}</h3>
+          <p class="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-grayLight">{{ 'cases.tipo_hcfmusp' | translate }}</p>
         </div>
       </div>
-
-      <div
-        class="group grid min-h-64 grid-rows-[7.5rem_1fr] rounded-md border border-gray-200 bg-bgLight p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan/70 hover:shadow-xl"
-      >
+      <div class="group grid min-h-64 grid-rows-[7.5rem_1fr] rounded-md border border-gray-200 bg-bgLight p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan/70 hover:shadow-xl">
         <div class="flex h-24 items-center justify-center self-start rounded-md bg-white p-4">
-          <img
-            src="assets/HSF.jpg"
-            alt="Hospital São Francisco"
-            class="max-h-16 w-full object-contain transition-all duration-300 group-hover:scale-105"
-          />
+          <img src="assets/HSF.jpg" alt="Hospital São Francisco" class="max-h-16 w-full object-contain transition-all duration-300 group-hover:scale-105" />
         </div>
         <div class="grid content-start border-l-4 border-cyan pl-4">
-          <h3 class="min-h-14 text-lg font-bold leading-snug text-slate-900">
-            Hospital São Francisco
-          </h3>
-          <p class="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-grayLight">
-            Instituição hospitalar
-          </p>
+          <h3 class="min-h-14 text-lg font-bold leading-snug text-slate-900">{{ 'cases.hospital_sf' | translate }}</h3>
+          <p class="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-grayLight">{{ 'cases.tipo_sf' | translate }}</p>
         </div>
       </div>
-
-      <div
-        class="group grid min-h-64 grid-rows-[7.5rem_1fr] rounded-md border border-gray-200 bg-bgLight p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan/70 hover:shadow-xl"
-      >
+      <div class="group grid min-h-64 grid-rows-[7.5rem_1fr] rounded-md border border-gray-200 bg-bgLight p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan/70 hover:shadow-xl">
         <div class="flex h-24 items-center justify-center self-start rounded-md bg-white p-4">
-          <img
-            src="assets/valsa.png"
-            alt="Grupo Valsa"
-            class="max-h-16 w-full object-contain transition-all duration-300 group-hover:scale-105"
-          />
+          <img src="assets/valsa.png" alt="Grupo Valsa" class="max-h-16 w-full object-contain transition-all duration-300 group-hover:scale-105" />
         </div>
         <div class="grid content-start border-l-4 border-cyan pl-4">
-          <h3 class="min-h-14 text-lg font-bold leading-snug text-slate-900">Grupo Valsa</h3>
-          <p class="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-grayLight">
-            Grupo de saúde
-          </p>
+          <h3 class="min-h-14 text-lg font-bold leading-snug text-slate-900">{{ 'cases.grupo_valsa' | translate }}</h3>
+          <p class="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-grayLight">{{ 'cases.tipo_valsa' | translate }}</p>
         </div>
       </div>
-
-      <div
-        class="group grid min-h-64 grid-rows-[7.5rem_1fr] rounded-md border border-gray-200 bg-bgLight p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan/70 hover:shadow-xl"
-      >
+      <div class="group grid min-h-64 grid-rows-[7.5rem_1fr] rounded-md border border-gray-200 bg-bgLight p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan/70 hover:shadow-xl">
         <div class="flex h-24 items-center justify-center self-start rounded-md bg-white p-4">
-          <img
-            src="assets/idpc-logo.svg"
-            alt="Instituto Dante Pazzanese de Cardiologia"
-            class="max-h-16 w-full object-contain transition-all duration-300 group-hover:scale-105"
-          />
+          <img src="assets/idpc-logo.svg" alt="Instituto Dante Pazzanese de Cardiologia" class="max-h-16 w-full object-contain transition-all duration-300 group-hover:scale-105" />
         </div>
         <div class="grid content-start border-l-4 border-cyan pl-4">
-          <h3 class="min-h-14 text-lg font-bold leading-snug text-slate-900">
-            Instituto Dante Pazzanese de Cardiologia
-          </h3>
-          <p class="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-grayLight">
-            Instituto de cardiologia
-          </p>
+          <h3 class="min-h-14 text-lg font-bold leading-snug text-slate-900">{{ 'cases.instituto_dante' | translate }}</h3>
+          <p class="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-grayLight">{{ 'cases.tipo_dante' | translate }}</p>
         </div>
       </div>
     </div>
 
-    <p
-      class="mx-auto mt-10 max-w-3xl border-t border-gray-200 pt-8 text-center text-base font-semibold leading-relaxed text-grayLight sm:text-lg"
-    >
-      Presença em ambientes hospitalares que exigem rastreabilidade, padronização de condutas e
-      acompanhamento contínuo.
+    <p class="mx-auto mt-10 max-w-3xl border-t border-gray-200 pt-8 text-center text-base font-semibold leading-relaxed text-grayLight sm:text-lg">
+      {{ 'cases.rodape' | translate }}
     </p>
   </div>
 </section>

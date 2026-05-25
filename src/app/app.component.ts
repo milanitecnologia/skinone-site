@@ -23,8 +23,19 @@ import { FooterComponent } from './components/footer/footer.component';
     DepoimentosComponent,
     CasesComponent,
     HowItWorksComponent,
-    FooterComponent,
+    FooterComponent
   ],
-  templateUrl: './app.component.html',
+  template: `
+    <app-navbar></app-navbar>
+    <app-hero></app-hero>
+    <app-sobre></app-sobre>
+    <app-objetivos></app-objetivos>
+    <app-componentes-section></app-componentes-section>
+    <app-funcionalidades></app-funcionalidades>
+    <app-depoimentos></app-depoimentos>
+    <app-cases></app-cases>
+    <app-how-it-works></app-how-it-works>
+    <app-footer></app-footer>
+  `
 })
 export class AppComponent {}

@@ -1,23 +1,15 @@
+<!-- src/app/components/objetivos/objetivos.component.html -->
 <section id="objetivos" class="relative bg-white py-20 sm:py-24">
   <div class="mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-10 xl:px-16">
-    <div
-      class="grid gap-6 lg:grid-cols-[minmax(0,680px)_minmax(320px,520px)] lg:items-start lg:justify-between"
-    >
+    <div class="grid gap-6 lg:grid-cols-[minmax(0,680px)_minmax(320px,520px)] lg:items-start lg:justify-between">
       <div class="max-w-[680px]">
-        <p class="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-main">
-          Objetivos do SKINONE
-        </p>
-        <h2
-          class="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-[2.8rem] xl:text-5xl"
-        >
-          Mais controle, menos retrabalho e decisões melhor documentadas.
+        <p class="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-main">{{ 'objetivos.badge' | translate }}</p>
+        <h2 class="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl lg:text-[2.8rem] xl:text-5xl">
+          {{ 'objetivos.titulo' | translate }}
         </h2>
       </div>
-      <p
-        class="max-w-xl border-l-4 border-main pl-5 text-lg leading-relaxed text-gray-600 sm:text-xl lg:mt-11 lg:justify-self-end"
-      >
-        A plataforma ajuda o hospital a padronizar o cuidado, registrar evidências e acompanhar
-        ações críticas com mais agilidade.
+      <p class="max-w-xl border-l-4 border-main pl-5 text-lg leading-relaxed text-gray-600 sm:text-xl lg:mt-11 lg:justify-self-end">
+        {{ 'objetivos.descricao' | translate }}
       </p>
     </div>
 
@@ -26,19 +18,17 @@
         <div class="absolute right-0 top-0 h-full w-1 bg-cyan"></div>
         <div>
           <span class="material-icons text-5xl text-cyan">track_changes</span>
-          <h3 class="mt-7 text-2xl font-bold sm:text-3xl">Objetivo central</h3>
-          <p class="mt-4 max-w-xl text-lg leading-relaxed text-white/75">
-            Dar visibilidade ao cuidado com a pele, do primeiro registro à evolução do paciente.
-          </p>
+          <h3 class="mt-7 text-2xl font-bold sm:text-3xl">{{ 'objetivos.central.titulo' | translate }}</h3>
+          <p class="mt-4 max-w-xl text-lg leading-relaxed text-white/75">{{ 'objetivos.central.texto' | translate }}</p>
         </div>
         <div class="mt-10 grid gap-4 border-t border-white/10 pt-6 sm:grid-cols-2">
           <div>
             <p class="text-3xl font-bold text-cyan">01</p>
-            <p class="mt-2 text-sm font-semibold text-white/70">Registro estruturado</p>
+            <p class="mt-2 text-sm font-semibold text-white/70">{{ 'objetivos.registro.titulo' | translate }}</p>
           </div>
           <div>
             <p class="text-3xl font-bold text-cyan">02</p>
-            <p class="mt-2 text-sm font-semibold text-white/70">Gestão do cuidado</p>
+            <p class="mt-2 text-sm font-semibold text-white/70">{{ 'objetivos.gestao.titulo' | translate }}</p>
           </div>
         </div>
       </div>
@@ -49,10 +39,8 @@
             <span class="material-icons">description</span>
           </div>
           <div>
-            <h3 class="text-xl font-bold text-slate-900">Documentar o processo</h3>
-            <p class="mt-2 leading-relaxed text-gray-600">
-              Registrar condutas e evidências para dar mais segurança à instituição.
-            </p>
+            <h3 class="text-xl font-bold text-slate-900">{{ 'objetivos.documentar.titulo' | translate }}</h3>
+            <p class="mt-2 leading-relaxed text-gray-600">{{ 'objetivos.documentar.texto' | translate }}</p>
           </div>
         </div>
         <div class="grid gap-4 p-5 sm:grid-cols-[auto_1fr] sm:p-6">
@@ -60,10 +48,8 @@
             <span class="material-icons">add_a_photo</span>
           </div>
           <div>
-            <h3 class="text-xl font-bold text-slate-900">Acompanhar por fotos</h3>
-            <p class="mt-2 leading-relaxed text-gray-600">
-              Facilitar a leitura da evolução das lesões ao longo do tratamento.
-            </p>
+            <h3 class="text-xl font-bold text-slate-900">{{ 'objetivos.fotos.titulo' | translate }}</h3>
+            <p class="mt-2 leading-relaxed text-gray-600">{{ 'objetivos.fotos.texto' | translate }}</p>
           </div>
         </div>
         <div class="grid gap-4 p-5 sm:grid-cols-[auto_1fr] sm:p-6">
@@ -71,10 +57,8 @@
             <span class="material-icons">sync_alt</span>
           </div>
           <div>
-            <h3 class="text-xl font-bold text-slate-900">Reduzir retrabalho</h3>
-            <p class="mt-2 leading-relaxed text-gray-600">
-              Integrar informações ao fluxo hospitalar e evitar registros duplicados.
-            </p>
+            <h3 class="text-xl font-bold text-slate-900">{{ 'objetivos.retrabalho.titulo' | translate }}</h3>
+            <p class="mt-2 leading-relaxed text-gray-600">{{ 'objetivos.retrabalho.texto' | translate }}</p>
           </div>
         </div>
         <div class="grid gap-4 p-5 sm:grid-cols-[auto_1fr] sm:p-6">
@@ -82,10 +66,8 @@
             <span class="material-icons">notifications_active</span>
           </div>
           <div>
-            <h3 class="text-xl font-bold text-slate-900">Alertar a equipe</h3>
-            <p class="mt-2 leading-relaxed text-gray-600">
-              Sinalizar cuidados necessários para apoiar a rotina assistencial.
-            </p>
+            <h3 class="text-xl font-bold text-slate-900">{{ 'objetivos.alertar.titulo' | translate }}</h3>
+            <p class="mt-2 leading-relaxed text-gray-600">{{ 'objetivos.alertar.texto' | translate }}</p>
           </div>
         </div>
       </div>

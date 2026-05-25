@@ -1,133 +1,72 @@
+<!-- src/app/components/footer/footer.component.html -->
 <footer id="footer" class="bg-slate-900 py-24 text-white">
   <div class="container mx-auto grid gap-12 px-4 lg:grid-cols-[0.85fr_1fr] lg:items-start">
     <div>
-      <p class="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-cyan">Fale conosco</p>
+      <p class="mb-4 text-sm font-bold uppercase tracking-[0.22em] text-cyan">{{ 'footer.badge' | translate }}</p>
       <h2 class="text-4xl font-bold leading-tight sm:text-5xl">
-        Vamos conversar sobre o cuidado com a pele no seu hospital
+        {{ 'footer.titulo' | translate }}
       </h2>
       <p class="mt-6 max-w-xl text-lg leading-relaxed text-white/70">
-        Entre em contato para conhecer a plataforma, tirar dúvidas ou agendar uma conversa com a
-        equipe SKINONE.
+        {{ 'footer.descricao' | translate }}
       </p>
 
       <div class="mt-10 grid gap-4">
-        <a
-          href="https://wa.me/5521992097277"
-          target="_blank"
-          rel="noopener"
-          class="group flex items-center gap-4 rounded-md border border-white/10 bg-white/5 p-5 transition-all hover:border-cyan/70 hover:bg-white/10"
-        >
-          <span
-            class="flex h-12 w-12 items-center justify-center rounded-md bg-main text-white transition-colors group-hover:bg-cyan"
-          >
+        <a href="https://wa.me/5521992097277" target="_blank" rel="noopener" class="group flex items-center gap-4 rounded-md border border-white/10 bg-white/5 p-5 transition-all hover:border-cyan/70 hover:bg-white/10">
+          <span class="flex h-12 w-12 items-center justify-center rounded-md bg-main text-white transition-colors group-hover:bg-cyan">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12.032 2.016c-5.52 0-10 4.48-10 10 0 1.76.464 3.44 1.28 4.912L2 21.984l5.008-1.312c1.44.784 3.072 1.248 4.8 1.248 5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18.432c-1.584 0-3.072-.416-4.352-1.152l-.32-.192-3.008.784.784-2.944-.192-.32c-.8-1.312-1.28-2.848-1.28-4.48 0-4.608 3.744-8.352 8.352-8.352 4.608 0 8.352 3.744 8.352 8.352 0 4.608-3.744 8.352-8.352 8.352zm4.576-6.304c-.256-.128-1.488-.736-1.728-.816-.24-.08-.416-.128-.592.128-.176.256-.672.816-.832.992-.16.176-.32.192-.576.064-.256-.128-1.088-.4-2.048-1.264-.768-.704-1.28-1.568-1.44-1.84-.16-.256-.016-.384.112-.512.112-.112.256-.288.384-.432.128-.144.176-.256.256-.416.08-.16.032-.304-.016-.416-.048-.112-.576-1.408-.8-1.92-.208-.496-.416-.416-.592-.416-.16 0-.336-.032-.512-.032-.176 0-.448.064-.688.32-.24.256-.912.896-.912 2.176 0 1.28.928 2.512 1.072 2.688.144.176 1.84 2.816 4.48 3.952.64.272 1.12.432 1.504.56.64.208 1.216.176 1.664.112.512-.08 1.488-.608 1.696-1.2.208-.592.208-1.104.144-1.216-.064-.112-.24-.176-.496-.304z"/>
             </svg>
           </span>
           <span>
-            <span class="block text-sm font-bold uppercase tracking-[0.16em] text-cyan"
-              >Whatsapp</span
-            >
+            <span class="block text-sm font-bold uppercase tracking-[0.16em] text-cyan">{{ 'footer.whatsapp' | translate }}</span>
             <span class="mt-1 block text-xl font-bold text-white">+55 (21) 99209-7277</span>
           </span>
         </a>
 
-        <a
-          href="mailto:contato@skinone.com.br"
-          class="group flex items-center gap-4 rounded-md border border-white/10 bg-white/5 p-5 transition-all hover:border-cyan/70 hover:bg-white/10"
-        >
-          <span
-            class="material-icons flex h-12 w-12 items-center justify-center rounded-md bg-main text-2xl text-white transition-colors group-hover:bg-cyan"
-            >email</span
-          >
+        <a href="mailto:contato@skinone.com.br" class="group flex items-center gap-4 rounded-md border border-white/10 bg-white/5 p-5 transition-all hover:border-cyan/70 hover:bg-white/10">
+          <span class="material-icons flex h-12 w-12 items-center justify-center rounded-md bg-main text-2xl text-white transition-colors group-hover:bg-cyan">email</span>
           <span>
-            <span class="block text-sm font-bold uppercase tracking-[0.16em] text-cyan"
-              >E-mail</span
-            >
+            <span class="block text-sm font-bold uppercase tracking-[0.16em] text-cyan">{{ 'footer.email_contato' | translate }}</span>
             <span class="mt-1 block text-xl font-bold text-white">contato@skinone.com.br</span>
           </span>
         </a>
 
         <div class="flex items-start gap-4 rounded-md border border-white/10 bg-white/5 p-5">
-          <span
-            class="material-icons flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-main text-2xl text-white"
-            >location_on</span
-          >
+          <span class="material-icons flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-main text-2xl text-white">location_on</span>
           <span>
-            <span class="block text-sm font-bold uppercase tracking-[0.16em] text-cyan"
-              >Endereço</span
-            >
-            <span class="mt-1 block text-lg leading-relaxed text-white/80"
-              >Rua Doutor Ovídio Pires de Campos, Cerqueira César, Prédio CEAC 4º andar, São Paulo -
-              SP, 05401-000</span
-            >
+            <span class="block text-sm font-bold uppercase tracking-[0.16em] text-cyan">{{ 'footer.endereco' | translate }}</span>
+            <span class="mt-1 block text-lg leading-relaxed text-white/80">Rua Doutor Ovídio Pires de Campos, Cerqueira César, Prédio CEAC 4º andar, São Paulo - SP, 05401-000</span>
           </span>
         </div>
       </div>
     </div>
 
-    <form
-      (ngSubmit)="enviarMensagem()"
-      class="flex flex-col gap-5 rounded-md bg-white p-6 text-slate-900 shadow-2xl sm:p-8"
-    >
+    <form (ngSubmit)="enviarMensagem()" class="flex flex-col gap-5 rounded-md bg-white p-6 text-slate-900 shadow-2xl sm:p-8">
       <div>
-        <p class="text-sm font-bold uppercase tracking-[0.18em] text-cyan">Mensagem rápida</p>
-        <h3 class="mt-2 text-2xl font-bold text-main">Conte um pouco sobre sua instituição</h3>
+        <p class="text-sm font-bold uppercase tracking-[0.18em] text-cyan">{{ 'footer.form_titulo' | translate }}</p>
+        <h3 class="mt-2 text-2xl font-bold text-main">{{ 'footer.form_subtitulo' | translate }}</h3>
       </div>
       <div>
-        <label for="contact-name" class="mb-2 block font-bold text-gray-700">Nome</label>
-        <input
-          id="contact-name"
-          type="text"
-          name="nome"
-          [(ngModel)]="nome"
-          required
-          placeholder="Seu nome completo"
-          class="w-full rounded-md border border-gray-200 bg-bgLight p-4 text-gray-800 transition-colors focus:border-main focus:outline-none"
-        />
+        <label for="contact-name" class="mb-2 block font-bold text-gray-700">{{ 'footer.form_nome' | translate }}</label>
+        <input id="contact-name" type="text" name="nome" [(ngModel)]="nome" required placeholder="Seu nome completo" class="w-full rounded-md border border-gray-200 bg-bgLight p-4 text-gray-800 transition-colors focus:border-main focus:outline-none" />
       </div>
       <div>
-        <label for="contact-email" class="mb-2 block font-bold text-gray-700">Email</label>
-        <input
-          id="contact-email"
-          type="email"
-          name="email"
-          [(ngModel)]="email"
-          required
-          placeholder="seu@email.com"
-          class="w-full rounded-md border border-gray-200 bg-bgLight p-4 text-gray-800 transition-colors focus:border-main focus:outline-none"
-        />
+        <label for="contact-email" class="mb-2 block font-bold text-gray-700">{{ 'footer.form_email' | translate }}</label>
+        <input id="contact-email" type="email" name="email" [(ngModel)]="email" required placeholder="seu@email.com" class="w-full rounded-md border border-gray-200 bg-bgLight p-4 text-gray-800 transition-colors focus:border-main focus:outline-none" />
       </div>
       <div>
-        <label for="contact-message" class="mb-2 block font-bold text-gray-700">Mensagem</label>
-        <textarea
-          id="contact-message"
-          rows="5"
-          name="mensagem"
-          [(ngModel)]="mensagem"
-          required
-          placeholder="Como podemos ajudar o seu hospital?"
-          class="w-full resize-none rounded-md border border-gray-200 bg-bgLight p-4 text-gray-800 transition-colors focus:border-main focus:outline-none"
-        ></textarea>
+        <label for="contact-message" class="mb-2 block font-bold text-gray-700">{{ 'footer.form_mensagem' | translate }}</label>
+        <textarea id="contact-message" rows="5" name="mensagem" [(ngModel)]="mensagem" required placeholder="Como podemos ajudar o seu hospital?" class="w-full resize-none rounded-md border border-gray-200 bg-bgLight p-4 text-gray-800 transition-colors focus:border-main focus:outline-none"></textarea>
       </div>
       @if (erroFormulario) {
-        <p
-          class="rounded-md border border-red-200 bg-red-50 px-4 py-3 text-sm font-bold text-red-700"
-          role="alert"
-          aria-live="polite"
-        >
+        <p class="rounded-md border border-red-200 bg-red-50 px-4 py-3 text-sm font-bold text-red-700" role="alert" aria-live="polite">
           {{ erroFormulario }}
         </p>
       }
       <div class="flex flex-col gap-3 pt-2 sm:flex-row sm:items-center sm:justify-between">
-        <p class="text-sm leading-relaxed text-grayLight">
-          O envio abre o WhatsApp com sua mensagem preenchida.
-        </p>
-        <button
-          type="submit"
-          class="inline-flex w-full min-w-fit items-center justify-center gap-2 whitespace-nowrap rounded-md bg-main px-8 py-4 text-base font-bold text-white transition-all hover:bg-cyan sm:w-auto sm:text-lg"
-        >
-          Enviar mensagem
+        <p class="text-sm leading-relaxed text-grayLight">{{ 'footer.form_aviso' | translate }}</p>
+        <button type="submit" class="inline-flex w-full min-w-fit items-center justify-center gap-2 whitespace-nowrap rounded-md bg-main px-8 py-4 text-base font-bold text-white transition-all hover:bg-cyan sm:w-auto sm:text-lg">
+          {{ 'footer.form_enviar' | translate }}
           <span class="material-icons text-xl">arrow_forward</span>
         </button>
       </div>

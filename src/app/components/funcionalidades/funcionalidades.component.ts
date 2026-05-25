@@ -1,28 +1,29 @@
+// src/app/components/funcionalidades/funcionalidades.component.ts
 import { Component } from '@angular/core';
-import { Funcionalidade } from '../../models/funcionalidade';
+import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
   selector: 'app-funcionalidades',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './funcionalidades.component.html',
 })
 export class FuncionalidadesComponent {
-  funcionalidades: Funcionalidade[] = [
-    { nome: 'Reconhecimento Facial', icone: 'face-scan-square-svgrepo-com.svg' },
-    { nome: 'Alertas em Tempo Real', icone: 'alert-svgrepo-com.svg' },
-    { nome: 'Documentação por Fotos', icone: 'folder-with-files-svgrepo-com.svg' },
-    { nome: 'Tutorial', icone: 'square-academic-cap-2-svgrepo-com.svg' },
-    { nome: 'Escala Braden', icone: 'diagnostic-svgrepo-com.svg' },
-    { nome: 'Controle de Execução', icone: 'chat-alert-2-svgrepo-com.svg' },
-    { nome: 'Estadiamento por IA', icone: 'stethoscope-svgrepo-com.svg' },
-    { nome: 'Indicadores', icone: 'doc-text-svgrepo-com.svg' },
-    { nome: 'Interface Interativa', icone: 'tablet-alt-1-svgrepo-com.svg' },
-    { nome: 'Conduta Diária', icone: 'clock-svgrepo-com.svg' },
-    { nome: 'Evolução da Lesão', icone: 'graphic-svgrepo-com.svg' },
-    { nome: 'Cronologia da Lesão', icone: 'backlog-svgrepo-com.svg' },
-    { nome: 'Gestão de Decúbito', icone: 'loading-arrows-svgrepo-com.svg' },
-    { nome: 'Gestão de Curativo', icone: 'bandage-svgrepo-com.svg' },
-    { nome: 'Gestão de Prevenção', icone: 'direction-svgrepo-com.svg' },
+  funcionalidades = [
+    { chave: 'funcionalidade.reconhecimento_facial', icone: 'face-scan-square-svgrepo-com.svg' },
+    { chave: 'funcionalidade.alertas_tempo_real', icone: 'alert-svgrepo-com.svg' },
+    { chave: 'funcionalidade.documentacao_fotos', icone: 'folder-with-files-svgrepo-com.svg' },
+    { chave: 'funcionalidade.tutorial', icone: 'square-academic-cap-2-svgrepo-com.svg' },
+    { chave: 'funcionalidade.escala_braden', icone: 'diagnostic-svgrepo-com.svg' },
+    { chave: 'funcionalidade.controle_execucao', icone: 'chat-alert-2-svgrepo-com.svg' },
+    { chave: 'funcionalidade.estadiamento_ia', icone: 'stethoscope-svgrepo-com.svg' },
+    { chave: 'funcionalidade.indicadores', icone: 'doc-text-svgrepo-com.svg' },
+    { chave: 'funcionalidade.interface_interativa', icone: 'tablet-alt-1-svgrepo-com.svg' },
+    { chave: 'funcionalidade.conduta_diaria', icone: 'clock-svgrepo-com.svg' },
+    { chave: 'funcionalidade.evolucao_lesao', icone: 'graphic-svgrepo-com.svg' },
+    { chave: 'funcionalidade.cronologia_lesao', icone: 'backlog-svgrepo-com.svg' },
+    { chave: 'funcionalidade.gestao_decubito', icone: 'loading-arrows-svgrepo-com.svg' },
+    { chave: 'funcionalidade.gestao_curativo', icone: 'bandage-svgrepo-com.svg' },
+    { chave: 'funcionalidade.gestao_prevencao', icone: 'direction-svgrepo-com.svg' },
   ];
 }

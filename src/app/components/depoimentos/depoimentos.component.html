@@ -1,22 +1,23 @@
+<!-- src/app/components/depoimentos/depoimentos.component.html -->
 <section id="depoimentos" class="bg-main py-20 sm:py-24">
   <div class="container mx-auto px-4">
     <div class="grid items-center gap-10 lg:grid-cols-[1fr_0.85fr]">
       <div class="rounded-md bg-white p-7 shadow-2xl sm:p-10 lg:p-12">
-        <p class="mb-5 text-sm font-bold uppercase tracking-[0.22em] text-cyan">Depoimento</p>
+        <p class="mb-5 text-sm font-bold uppercase tracking-[0.22em] text-cyan">{{ 'depoimentos.badge' | translate }}</p>
         <blockquote class="text-xl font-semibold leading-relaxed text-gray-700 sm:text-2xl lg:text-3xl">
-          "É um produto muito prático e inovador no mercado hospitalar, desenvolvido exclusivamente para otimizar o acompanhamento dos cuidados da pele, na prevenção e evolução de todos os tipos de lesão, mantendo as particularidades da instituição, com estatísticas e gráficos em tempo real, além de gerar relatórios dos indicadores da ANVISA."
+          {{ 'depoimentos.texto' | translate }}
         </blockquote>
         <div class="mt-8 border-l-4 border-cyan pl-5">
-          <p class="text-xl font-bold text-main">Elza Coutinho</p>
-          <p class="mt-1 text-lg font-semibold text-grayLight">Enfermeira Intensivista</p>
+          <p class="text-xl font-bold text-main">{{ 'depoimentos.autor' | translate }}</p>
+          <p class="mt-1 text-lg font-semibold text-grayLight">{{ 'depoimentos.cargo' | translate }}</p>
         </div>
       </div>
 
       <div class="relative overflow-hidden rounded-md bg-slate-950 shadow-2xl">
         <img src="assets/Skin 2.jpg" alt="Equipe de saúde utilizando tecnologia no atendimento hospitalar" class="h-auto w-full object-contain">
         <div class="border-t border-white/15 bg-slate-950 p-5 sm:absolute sm:bottom-0 sm:left-0 sm:right-0 sm:bg-slate-950/60 sm:p-6 sm:backdrop-blur-sm">
-          <p class="text-sm font-bold uppercase tracking-[0.18em] text-cyan">Cuidado monitorado</p>
-          <p class="mt-2 text-lg font-bold text-white sm:text-xl">Tecnologia aplicada à rotina assistencial.</p>
+          <p class="text-sm font-bold uppercase tracking-[0.18em] text-cyan">{{ 'depoimentos.caption' | translate }}</p>
+          <p class="mt-2 text-lg font-bold text-white sm:text-xl">{{ 'depoimentos.caption_texto' | translate }}</p>
         </div>
       </div>
     </div>
