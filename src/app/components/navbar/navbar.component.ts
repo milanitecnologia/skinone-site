@@ -15,7 +15,7 @@ export class NavbarComponent implements OnDestroy {
   menuOpen = false;
   langDropdownOpen = false;
   langDropdownMobileOpen = false;
-  currentLang$!: Observable<Language>;
+  currentLang$: Observable<Language>;
   private subscription: Subscription;
 
   constructor(private translationService: TranslationService) {
